@@ -1,0 +1,208 @@
+body{
+    font-family: Tahoma, serif;
+    margin:0;
+    padding: 0;
+    background-color: rgb(229, 161, 229);
+    overflow-x: hidden;
+    
+    
+    
+}
+.navbar{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(243, 197, 243);
+    display: flex;
+    justify-content: center;
+    
+}
+.nav-content {
+    display: block;
+    justify-content: center;
+    padding: 14px 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.nav-content:hover{
+    opacity: 0.5s;
+    text-decoration: underline;
+    transition: 0.5s;
+    color: white;
+    
+}
+
+.title-section{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+    
+    
+}
+.title-section-image{
+    background-image: url('bakery_image.jpg');
+    background-size:cover;
+    height: 500px;
+    width: 105%;
+    object-fit: cover;
+    
+}
+.title{
+    color:rgb(70, 201, 231);
+    font-size: 50px;
+    margin-left: 35px;
+    margin-top: 200px;
+    font-style: italic;
+    text-align: center;
+    padding-right: 10px;
+    
+
+}
+
+.container{
+    width:100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    overflow: hidden;
+    
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-6{
+    width: 100%;
+    padding:30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 15px;
+    
+    
+
+}
+.story{
+    font-size: 30px;
+    text-align: center;
+}
+.bakery-img{
+    width: 100%;
+    height:auto;
+    border-radius: 15px;
+    margin-right: 0;
+    vertical-align: top;
+}
+.text-container{
+    margin-left: 0;
+    vertical-align: top;
+    border-radius: 15px;
+    font-style: italic;
+    
+    
+}
+.section-title{
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    vertical-align: top;
+}
+p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+@media (min-width: 769px) {
+    .container {
+        padding: auto;
+    }
+
+    .col-6 {
+        width: 50%;
+        padding: 30px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+.items-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+
+}
+
+.card{
+    background-color: pink;
+    width: 300px;
+    height: 420px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.card-image{
+    height: 300px;
+    position: center;
+    margin-bottom: 10px;
+    background-size: cover;
+    border-radius: 15px;
+    width: 100%;
+
+}
+.item-1{
+    background-image: url('creme_brulee.png');
+}
+.item-2{
+    background-image: url('choc-croissant.jpg');
+}
+.item-3{
+    background-image: url('puff_pastry.jpg');
+}
+.item-4{
+    background-image: url('apple-pie.jpg');
+}
+.card h2{
+    padding: 5px;
+}
+.card p{
+    font-size: 20px;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+}
+.contact-container{
+    width:100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: rgb(138, 91, 91);
+    color: white;
+    border-radius: 15px;
+    
+
+}
+.contact-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-info{
+    margin: auto;
+    padding:auto;
+    
+}
+.business-hours{
+    margin: auto;
+    padding:auto;
+    margin-bottom: 77px;
+
+}
