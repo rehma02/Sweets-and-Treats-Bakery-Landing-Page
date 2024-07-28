@@ -10,8 +10,3 @@ my ability to design websites that follow accessibility guidelines, provide cust
 - **HTML:** This language was used to create the structure of the page and build a skeleton for the website.
 - **CSS:** This language was used to stylize the page and add effects which made the page dynamic and functional.
 - **Visual Studio Code:** This was the code editor I used to create this project.
-
-```sh
-git clone https://github.com/rehma02/Sweets-and-Treats-Bakery-Landing-Page.git
-cd Sweets-and-Treats-Bakery-Landing-Page
-
