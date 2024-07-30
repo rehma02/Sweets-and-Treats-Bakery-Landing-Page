@@ -44,7 +44,7 @@ body{
     
 }
 .title-section-image{
-    background-image: url('images/bakery_image.jpg');
+    background-image: url('bakery_image.jpg');
     background-size:cover;
     height: 500px;
     width: 105%;
@@ -192,16 +192,16 @@ p{
 
 }
 .item-1{
-    background-image: url('images/creme_brulee.png');
+    background-image: url('creme_brulee.png');
 }
 .item-2{
-    background-image: url('images/choc-croissant.jpg');
+    background-image: url('choc-croissant.jpg');
 }
 .item-3{
-    background-image: url('images/puff_pastry.jpg');
+    background-image: url('puff_pastry.jpg');
 }
 .item-4{
-    background-image: url('images/apple-pie.jpg');
+    background-image: url('apple-pie.jpg');
 }
 .card h2{
     padding: 5px;
