@@ -44,23 +44,29 @@ body{
     
 }
 .title-section-image{
-    background-image: url('bakery_image.jpg');
+    background-image: url('images/bakery_image.jpg');
     background-size:cover;
     height: 500px;
     width: 105%;
     object-fit: cover;
-    
+        
 }
 .title{
-    color:rgb(70, 201, 231);
+    color:rgb(251, 166, 235);
     font-size: 50px;
-    margin-left: 35px;
-    margin-top: 200px;
+    margin: 40px 0 0 35px;
     font-style: italic;
     text-align: center;
-    padding-right: 10px;
-    
-
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    height: 115px;
+    display: inline-block;
+}
+.title:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+    transition: all 1s ease;
 }
 
 .container{
@@ -116,7 +122,37 @@ p{
     margin-bottom: 20px;
     margin-top: 20px;
 }
-@media (min-width: 769px) {
+@media (min-width: 640px) {
+    .container {
+        padding: auto;
+    }
+
+    .col-6 {
+        width: 50%;
+        padding: 30px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:960px){
+    .container {
+        padding: auto;
+    }
+
+    .col-6 {
+        width: 50%;
+        padding: 30px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:1100px){
     .container {
         padding: auto;
     }
@@ -156,16 +192,16 @@ p{
 
 }
 .item-1{
-    background-image: url('creme_brulee.png');
+    background-image: url('images/creme_brulee.png');
 }
 .item-2{
-    background-image: url('choc-croissant.jpg');
+    background-image: url('images/choc-croissant.jpg');
 }
 .item-3{
-    background-image: url('puff_pastry.jpg');
+    background-image: url('images/puff_pastry.jpg');
 }
 .item-4{
-    background-image: url('apple-pie.jpg');
+    background-image: url('images/apple-pie.jpg');
 }
 .card h2{
     padding: 5px;
