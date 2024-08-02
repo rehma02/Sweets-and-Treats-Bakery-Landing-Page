@@ -186,13 +186,7 @@ body{
     border-radius: 15px;
     
 }
-.card:hover .card-inner{
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: all 1s ease;
-    background-color: white;
-    transform: rotateY(180deg);
-}
+
 .card-front{
     background-color: pink;
     position: absolute;
@@ -203,6 +197,9 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.card .card-inner.flipped {
+    transform: rotateY(180deg);
 }
 .item-1{
     background-image: url('creme_brulee.png');
