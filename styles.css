@@ -75,7 +75,7 @@ body{
     flex-wrap: wrap;
     overflow: hidden;
     padding: 50px;
-    display: inline-block;
+    
     
     
 
@@ -92,6 +92,7 @@ body{
     min-width: 100%;
     flex-direction: row;
     display: inline-block;
+    
 
 }
 .story{
@@ -106,7 +107,9 @@ body{
     vertical-align: top;
     border-radius: 15px;
     font-style: italic;
-    width:400px;
+    width:100%;
+    display: flex;
+    
     
     
 }
@@ -127,6 +130,7 @@ body{
     width: 100%;
     font-size: medium;
     text-align: left;
+    display: flex;
 }
 .active, .accordion:hover{
     background-color: white;
