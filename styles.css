@@ -124,6 +124,7 @@ p{
     justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 15px;
+    position: relative;
 
 }
 
@@ -133,6 +134,9 @@ p{
     height: 420px;
     margin: 10px;
     border-radius: 15px;
+    backface-visibility: hidden;
+    position: relative;
+    perspective: 1000px;
 }
 .card-image{
     height: 300px;
@@ -141,7 +145,38 @@ p{
     background-size: cover;
     border-radius: 15px;
     width: 100%;
+    position: relative;
 
+
+}
+.card-inner{
+    position:relative;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor:pointer;
+    border-radius: 15px;
+    
+}
+.card:hover .card-inner{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 1s ease;
+    background-color: white;
+    transform: rotateY(180deg);
+}
+.card-front{
+    background-color: pink;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .item-1{
     background-image: url('creme_brulee.png');
@@ -163,10 +198,44 @@ p{
     padding: 5px;
     padding-bottom: 20px;
 }
-.card:hover{
+.card-back{
+    background-color: pink;
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.button{
+    background-color: rgb(228, 36, 228);
+    font-weight: 600;
+    font-family: Tahoma,serif;
+    border-radius: 15px;
+    height:30px;
+    border: none; 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
     cursor: pointer;
-    transform: scale(1.05);
-    transition: all 1s ease;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    position: relative;
+    
+
+}
+.button:hover{
+    background-color: white;
+    color: rgb(228, 36, 228);
+    transition: 0.5s;
 }
 
 .contact-container{
