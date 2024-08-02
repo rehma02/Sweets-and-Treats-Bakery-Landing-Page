@@ -15,7 +15,6 @@
                 <a class="nav-content" href="#contact">Contact</a>
             </nav>
         </header>
-         
         <div class="title-section">
             <h1 class="title">
                 Sweets & Treats 
@@ -32,14 +31,17 @@
                            equipment and perfectly crafted recipes, we create treats that leave an everlasting impression making you want
                            to indulge over and over.
                         </p>
-                        <p>Our expert bakers and pastry chefs work tirelessly to perfect each recipe. Whether it's our melt-in-your-mouth cookies, 
-                            rich and creamy cakes, or delightful pastries, we use the highest quality ingredients to guarantee freshness and taste. 
-                        </p>
-                           
-                        <p>At Sweets and Treats, we believe that indulging in a delicious dessert should be a memorable occasion. That's why we go 
-                           above and beyond to make each bite a delightful journey of flavors. From the initial preparation to the final presentation, 
-                           our team ensures that every aspect of our treats meets the highest standards.
-                        </p>
+                        <button class="accordion">Click here to read more</button>
+                        <div class="panel">
+                            <p>Our expert bakers and pastry chefs work tirelessly to perfect each recipe. Whether it's our melt-in-your-mouth cookies, 
+                                rich and creamy cakes, or delightful pastries, we use the highest quality ingredients to guarantee freshness and taste. 
+                            </p>
+                               
+                            <p>At Sweets and Treats, we believe that indulging in a delicious dessert should be a memorable occasion. That's why we go 
+                               above and beyond to make each bite a delightful journey of flavors. From the initial preparation to the final presentation, 
+                               our team ensures that every aspect of our treats meets the highest standards.
+                            </p>
+                        </div>
                     </div>
                 </div>    
         </section>
@@ -123,5 +125,25 @@
                 </div>
             </div>
         </section>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+        </script>
     </body>
 </html>
