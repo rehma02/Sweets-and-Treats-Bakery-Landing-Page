@@ -45,23 +45,26 @@ body{
     align-items: center;
     justify-content: center;
     min-width: 100%;
+    filter: opacity(90%);
     
     
     
 }
 
 .title{
-    color:rgb(251, 166, 235);
-    font-size: 45px;
+    color:rgb(161, 28, 205);
+    font-size: 80px;
     font-style: italic;
     text-align: center;
-    background-color: white;
-    padding: 10px;
+    margin-top: 60px;
+    margin-bottom: 100px;
     border-radius: 5px;
-    height: 100px;
-    display: inline-block;
+    display: flex;
     justify-content: center;
-    
+    background-color: white;
+    filter:opacity(80%);
+    width:45%;
+    position: relative;
 }
 .title:hover{
     transform: scale(1.05);
